@@ -7,12 +7,9 @@ public class App {
         Fibonacci fibonacci = new Fibonacci();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        if (scanner.hasNextInt()) {
-            int n = scanner.nextInt();
-            System.out.println("Fibonacci Sequence of " + n + " " + "is:");
-            fibonacci.fib(n, true);
-        } else {
+        int n = scanner.nextInt();
+        System.out.println("Fibonacci Sequence of " + n + " " + "is:");
+        fibonacci.fib(n, true);
 
-        }
     }
 }
